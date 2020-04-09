@@ -64,6 +64,7 @@ class DetailTableViewController: UITableViewController {
         dateLabel.textColor = (reminderSwitch.isOn ? .black: .gray)
         dateLabel.text = dateFormatter.string(from: toDoItem.date)
         enableDisableSaveButton(text: nameField.text!)
+        updateReminderSwitch()
     }
     
     func updateReminderSwitch(){
